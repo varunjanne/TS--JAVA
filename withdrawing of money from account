@@ -1,0 +1,28 @@
+class account1
+ {
+  double balance;
+  void addbalance(double value)
+  {
+     balance = balance+value;
+  }
+ double getbalance()
+  {
+     return balance;
+  }
+ void withdraw(double amount)
+  {
+    if(amount+1000<=balance)
+          balance=balance-amount;
+    else
+          System.out.println("no sufficint balance");
+  }
+public static void main(String args[])
+  {
+    account1 acc=new account1();
+    acc.addbalance(1000);
+    acc.addbalance(acc.getbalance()*2);
+    System.out.println("before withdraw "+acc.getbalance());
+     acc.withdraw(1000);
+    System.out.println("after withdraw" +acc.getbalance());
+  }
+}
