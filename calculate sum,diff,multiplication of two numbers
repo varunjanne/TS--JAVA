@@ -1,0 +1,35 @@
+class calculater
+  {
+     int add(int a, int b)
+     {
+        int c;
+        c=a+b;
+        return c;
+     }
+     int sub(int d, int f)
+     {
+        int g;
+        g=d-f;
+        return g;
+     }
+    int mul(int h, int i)
+     {
+        int j;
+        j=h*i;
+        return j;
+     }
+}
+
+class calculateroper
+{
+   public static void main(String args[])
+   {
+     calculater calc=new calculater();
+     int sum=calc.add(23,25);
+     int diff=calc.sub(25,23);
+     int multi=calc.mul(2,3);
+     System.out.println("sum of a and b is "+sum);
+     System.out.println("difference is "+diff);
+     System.out.println("multiplication is "+multi);
+   }
+}
